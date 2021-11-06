@@ -21,17 +21,11 @@ Installation
 - Install this theme using the official Backdrop CMS instructions at
   https://backdropcms.org/guide/themes.
 
-Documentation
--------------
-
-Additional documentation is located in the Wiki:
-https://github.com/backdrop-contrib/foo-project/wiki/Documentation.
-
 Issues
 ------
 
 Bugs and Feature requests should be reported in the Issue Queue:
-https://github.com/backdrop-contrib/foo-project/issues.
+https://github.com/backdrop-contrib/axioma/issues.
 
 Current Maintainers
 -------------------
