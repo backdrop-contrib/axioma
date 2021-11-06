@@ -20,7 +20,7 @@
 <?php endif; ?>
 <?php print render($title_suffix); ?>
 
-  <div class="block-content">
+  <div class="block-content <?php print $ax_align ?>">
     <?php print render($content); ?>
   </div>
 </div>

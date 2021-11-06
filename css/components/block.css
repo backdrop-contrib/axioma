@@ -1,0 +1,15 @@
+.ax-align-left {
+	text-align: start;
+}
+
+.ax-align-center {
+	text-align: center;
+}
+
+.ax-align-right {
+	text-align: end;
+}
+
+div.ax-align-right li.node-readmore {
+	padding-right: 0;
+}

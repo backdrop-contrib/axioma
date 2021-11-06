@@ -1,0 +1,286 @@
+ul.menu-dropdown {
+	width: 100%;
+  position: relative;
+	display: inline-block;
+}
+
+/* Menu without a toggle should have transparent first ul. */
+ul.menu-dropdown > li > ul,
+ul.menu-dropdown.menu-toggles-processed > li {
+	background: var(--menu-bg-color);
+}
+
+ul.menu-dropdown.menu-toggles-processed > li > ul {
+	background: var(--accent-transparent);
+}
+
+/* Undo system.theme.css menu styles for dropdowns. */
+.menu-dropdown li,
+.menu-dropdown li.expanded,
+.menu-dropdown li.collapsed,
+.menu-dropdown li.leaf {
+  margin: 0;
+  padding: 0;
+}
+
+.js .menu-dropdown a,
+.js .menu-dropdown a:hover,
+.js .menu-dropdown a:focus,
+.js .menu-dropdown a:active {
+	padding: 1rem;
+  /*line-height: 2.6rem;*/
+  text-decoration: none;
+}
+
+/* Seems like 'active' class should used instead of 'current' */
+.menu-dropdown a.active,
+.menu-dropdown a.current {
+  color: var(--accent-color);
+}
+
+.menu-dropdown a span.sub-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.4rem;
+  left: auto;
+  right: 0;
+  width: 2.6rem;
+  height: 100%;
+  overflow: hidden;
+  font: bold 1.4rem/2.8rem monospace !important;
+  text-align: center;
+  text-shadow: none;
+}
+.menu-dropdown span.sub-arrow:before {
+  display: block;
+  content: '+';
+}
+.menu-dropdown a.highlighted span.sub-arrow:before {
+  display: block;
+  content: '-';
+}
+
+.menu-dropdown li {
+  border-top: 1px solid;
+	border-top-color: var(--accent-transparent);
+}
+
+.menu-dropdown > li:first-child {
+  border-top: 0;
+}
+
+.menu-dropdown ul {
+  background: var(--accent-transparent);
+}
+
+.menu-dropdown ul a,
+.menu-dropdown ul a:hover,
+.menu-dropdown ul a:focus,
+.menu-dropdown ul a:active {
+  border-left: 0.4rem solid transparent;
+}
+
+.menu-dropdown ul ul a,
+.menu-dropdown ul ul a:hover,
+.menu-dropdown ul ul a:focus,
+.menu-dropdown ul ul a:active {
+  border-left: 0.8rem solid transparent;
+}
+.menu-dropdown ul ul ul a,
+.menu-dropdown ul ul ul a:hover,
+.menu-dropdown ul ul ul a:focus,
+.menu-dropdown ul ul ul a:active {
+  border-left: 1.2rem solid transparent;
+}
+.menu-dropdown ul ul ul ul a,
+.menu-dropdown ul ul ul ul a:hover,
+.menu-dropdown ul ul ul ul a:focus,
+.menu-dropdown ul ul ul ul a:active {
+  border-left: 1.6rem solid transparent;
+}
+.menu-dropdown ul ul ul ul ul a,
+.menu-dropdown ul ul ul ul ul a:hover,
+.menu-dropdown ul ul ul ul ul a:focus,
+.menu-dropdown ul ul ul ul ul a:active {
+  border-left: 2rem solid transparent;
+}
+
+@media (min-width: 48em) {
+  /* Switch to desktop layout
+  -----------------------------------------------
+     These transform the menu tree from
+     collapsible to desktop (navbar + dropdowns)
+  -----------------------------------------------*/
+  /* start... (it's not recommended editing these rules) */
+  .js .menu-dropdown ul {
+    position: absolute;
+    width: 12em;
+    top: 1em;
+  }
+
+  .menu-dropdown li {
+    float: left;
+  }
+
+  [dir="rtl"] .menu-dropdown li {
+    float: right;
+  }
+
+  .menu-dropdown ul li,
+  [dir="rtl"] .menu-dropdown ul li {
+    float: none;
+  }
+
+  .menu-dropdown a {
+    white-space: nowrap;
+  }
+
+  .menu-dropdown ul a {
+    white-space: normal;
+  }
+  /* ...end */
+	
+	ul.menu-dropdown {
+		width: auto;
+  }
+	
+	/* Remove background for the first ul in descktop and mobile without a toggle. */
+	ul.menu-dropdown > li,
+  ul.menu-dropdown.menu-toggles-processed > li	{
+		background: transparent;
+	}
+	
+	ul.menu-dropdown.menu-toggles-processed > li > ul {
+		background: var(--menu-bg-color);
+  }
+	
+	/* Basic color for menu items and lines. */
+  ul.menu-dropdown ul {
+    border: 1px solid;
+		border-color: var(--accent-transparent);
+	  background: var(--menu-bg-color);
+  }
+	
+	ul.menu-dropdown li {
+    border-top: 0;
+  }
+	
+	/* remove left padding on the very first(leftmost) menu item */ 
+	ul.menu-dropdown > li:first-child > a,
+	ul.menu-dropdown > li:first-child > a:hover,
+	ul.menu-dropdown > li:first-child > a:focus,
+	ul.menu-dropdown > li:first-child > a:active {
+		padding-left: 0;
+	}
+	
+	/* remove right padding on the very last(rightmost) menu item */
+	ul.menu-dropdown > li:last-child > a:not(.has-submenu) {
+		padding-right: 0;
+	}
+	
+	/* shift the rightmost menu item with a sub arrow */
+	ul.menu-dropdown > li:last-child > a.has-submenu {
+		margin-right: -0.9rem;
+	}
+	
+  .menu-dropdown li.has-children > a,
+  .menu-dropdown li.has-children > a:hover,
+  .menu-dropdown li.has-children > a:focus,
+  .menu-dropdown li.has-children > a:active	{
+		/* padding-right makes room for the toggle button (sub indicator) */
+    padding-right: 2rem;
+  }
+	
+	/* sub arrow pointing down */
+  .menu-dropdown a span.sub-arrow:before,
+  .menu-dropdown a.highlighted span.sub-arrow:before {
+		content: '\25BE';
+		font-size: 1.2rem;
+  }
+	
+	.menu-dropdown a:hover .sub-arrow,
+	.menu-dropdown a:focus .sub-arrow,
+	.menu-dropdown a:active .sub-arrow	{
+    border-color: transparent;
+		border-top-color: var(--accent-color);
+  }
+	
+  .menu-dropdown ul a,
+  .menu-dropdown ul a:hover,
+  .menu-dropdown ul a:focus,
+  .menu-dropdown ul a:active,
+  .menu-dropdown ul a.highlighted {
+    border: 0 !important; /* why important? */
+  }
+	
+  .menu-dropdown ul a:hover,
+  .menu-dropdown ul a:focus,
+  .menu-dropdown ul a:active,
+  .menu-dropdown ul a.highlighted {
+    background: var(--accent-transparent);
+  }
+	
+	/* sub arrow pointing to the right */
+	.menu-dropdown ul a span.sub-arrow:before,
+  .menu-dropdown ul a.highlighted span.sub-arrow:before {
+		content: '\25B8';
+  }
+	
+	/* sub arrow color when highlighted */
+	.menu-dropdown ul a:hover .sub-arrow,
+	.menu-dropdown ul a:focus .sub-arrow,
+	.menu-dropdown ul a:active .sub-arrow {
+    border-color: transparent;
+		border-left-color: var(--accent-color);
+  }
+	
+	/* scroll arrow */
+  .menu-dropdown span.scroll-up,
+  .menu-dropdown span.scroll-down {
+    position: absolute;
+		text-align: center;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    height: 1.4rem;
+		background: var(--menu-bg-color);
+		border: 1px solid;
+		border-color: var(--accent-transparent);
+  }
+	
+  .menu-dropdown span.scroll-up-arrow:before {
+		content: '\25B2';	
+  }
+	
+  .menu-dropdown span.scroll-down-arrow:before {
+		content: '\25BC';
+  }
+	
+	/* right to left(rtl) styles have not been tested!!! */
+  [dir="rtl"] .menu-dropdown li.has-children > a {
+    padding-right: 0.75rem;
+    padding-left: 1.5rem;
+  }
+  [dir="rtl"] .menu-dropdown span.sub-arrow {
+    right: auto;
+    left: 0.75rem;
+  }
+  [dir="rtl"] .menu-dropdown > li > ul:before {
+    left: auto;
+    right: 1.875rem;
+  }
+  [dir="rtl"] .menu-dropdown > li > ul:after {
+    left: auto;
+    right: 2rem;
+  }
+  [dir="rtl"] .menu-dropdown li.has-children > a {
+    padding: 0.625rem 1.25rem !important;
+  }
+  [dir="rtl"] .menu-dropdown span.sub-arrow {
+    right: auto;
+    left: 0.5rem;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent;
+		border-right-color: var(--base-color);
+  }
+}

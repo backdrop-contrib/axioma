@@ -1,0 +1,64 @@
+.block-system-header > .block-content {
+	display: block;
+	padding-top: 3rem;
+	margin-bottom: 1.8rem;
+}
+
+.header-menu {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: .5rem .5rem .25rem .5rem;
+	text-align: center;
+	z-index: 999;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+}
+
+.ax-logo-svg {
+  fill-opacity: 1;
+  stroke: none;
+  fill-rule: evenodd;
+}
+
+.site-name {
+	margin: .3rem;
+}
+
+.name-and-slogan {
+	display: block;
+	text-align: center;
+  margin-bottom: 1rem;
+	background: transparent;
+}
+
+@media (min-width: 48em) {
+	
+	.header-menu {
+		position: relative;
+		width: auto;
+	}
+	
+	.ax-sticky-enabled {
+		display: block;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: 0;
+	}
+	
+	.ax-sticky-shift {
+		margin-top: 3rem;
+	}
+	
+	.header-menu.ax-sticky-enabled > ul.menu {
+		display: inline-block;
+	}
+}

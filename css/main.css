@@ -1,0 +1,383 @@
+/**
+ * @file
+ * Base element styles and normalize overrides.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.site-slogan {
+	text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu {
+	display: inline-block;
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+ul.menu a,
+.username {
+	text-decoration: none;
+}
+
+ul.menu:not(.menu-tree) a {
+	text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+p.submitted,
+p.search-info {
+	text-transform: uppercase;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid;
+}
+
+figure {
+  margin: 0;
+}
+
+pre,
+blockquote {
+	border-left: 0.15rem solid;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 1em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+tr, 
+td,
+caption {
+	padding: 0.5rem;
+	overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th {
+  border-bottom: 2px solid;
+  text-align: left;
+}
+
+th,
+label,
+caption {
+	text-transform: uppercase;
+}
+
+tr.even,
+tr.odd {
+  background-color: transparent;
+  border: 0;
+	padding: 0;
+}
+
+th.active > a > img {
+	margin-left: 0.25rem;
+}
+
+input,
+select,
+textarea,
+fieldset {
+	padding: 0.5rem;
+	border: 1px solid;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+input.form-radio,
+input.form-checkbox {
+  vertical-align: baseline;
+}
+
+.form-item .description {
+  padding: 0.25rem 0;
+}
+
+.form-type-radio .description,
+.form-type-checkbox .description {
+  margin-left: 1.2rem;
+}
+
+input.form-submit,
+button.form-submit {
+	cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 1rem;
+  margin-right: 1rem;
+  letter-spacing: 0.025em;
+}
+
+fieldset {
+  position: relative;
+  max-width: 100%;
+  margin: 1rem 0;
+  padding: 3rem 0 0 0;
+  min-width: 0;
+}
+
+fieldset .fieldset-legend {
+	display: block;
+	position: absolute;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.js fieldset.collapsible .fieldset-title {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  padding: 0.3rem 0.3rem 0.3rem 1.6rem;
+  margin: 0;
+  background: transparent;
+  text-decoration: none;
+}
+
+.js fieldset.collapsed {
+  padding: 3rem 0 0!important;
+}
+
+fieldset.collapsible .fieldset-legend {
+	display: block;
+	padding: 0.5rem 0.75rem;
+}
+
+.js fieldset.collapsible .fieldset-legend a:before {
+  content: "\25BC";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.4rem;
+}
+
+.js fieldset.collapsible.collapsed .fieldset-legend a:before {
+  content: "\25BA";
+}
+
+fieldset .fieldset-wrapper {
+  padding: 0 1rem;
+}
+
+.form-item-text-format-format {
+	margin-top: 1.5rem;
+}
+
+.filter-guidelines-item {
+	margin-top: 0.5rem;
+}
+
+legend {
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/* Vertical tabs start */
+.vertical-tabs {
+  position: relative;
+  margin: 1em 0;
+	border: 1px solid;
+}
+
+.vertical-tabs-list {
+  position: relative;
+  z-index: 1;
+  display: none;
+  width: 15em;
+  border-top: 1px solid;
+  padding: 0;
+}
+
+.vertical-tab-item {
+  border: 1px solid;
+  border-left-width: 0;
+  border-top-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-tabs-pane {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+
+.vertical-tabs-pane:nth-last-child(2) {
+  border-bottom: 0;
+}
+
+.vertical-tabs-pane .fieldset-wrapper {
+  display: none;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.vertical-tabs-pane.vertical-tab-selected > .vertical-tab-link {
+	background: transparent;
+  border-bottom: 1px solid;
+}
+
+.vertical-tab-selected .fieldset-wrapper {
+  display: block;
+}
+
+.vertical-tab-link {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.vertical-tab-link,
+.vertical-tab-link:focus strong,
+.vertical-tab-link:active strong,
+.vertical-tab-link:hover strong,
+.vertical-tab-link .fieldset-legend,
+.vertical-tab-link:focus .fieldset-legend,
+.vertical-tab-link:active .fieldset-legend,
+.vertical-tab-link:hover .fieldset-legend {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.vertical-tab-link strong,
+.vertical-tab-link .fieldset-legend {
+  position: static;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-tabs-pane > .vertical-tab-link {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+	background: transparent;
+}
+/* Vertcal tabs end */
+
+.progress .bar {
+  background-color: transparent;
+  border: 1px solid;
+	height: 32px;
+}
+
+.progress .filled {
+  height: 31px;
+}
+
+.js .dropbutton-widget {
+	background: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	-webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  border-style: solid;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+	text-transform: uppercase;
+}
+
+.marker {
+  padding: 0 0.3rem;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.block-system-powered-by {
+	text-align: center;
+	padding-top: 1.5rem;
+	margin: 2rem auto;
+  border-top: 1px solid;
+}
+
+.pager,
+.breadcrumb,
+.more-link,
+.more-help-link,
+.node-readmore,
+.permalink,
+.password-toggle,
+.tabledrag-toggle-weight,
+.block-system-powered-by {
+	text-transform: uppercase;
+}
+
+@media (min-width: 48em) {
+	
+	.vertical-tabs-pane {
+		position: static;
+		height: auto;
+		padding: 1rem 0.5rem 0 0.5rem;
+		background: transparent;
+		border-bottom: 0;
+	}
+
+	.vertical-tabs-list {
+		display: block;
+	}
+	
+	.vertical-tab-item.vertical-tab-selected {
+		border-right-width: 0;
+		background: transparent;
+	}
+	
+	.vertical-tabs:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -10;
+		width: 15em;
+		height: 100%;
+	}
+}

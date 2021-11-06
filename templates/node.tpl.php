@@ -107,7 +107,9 @@
     ?>
   </div>
 
+  <div class="ax-align-right">
   <?php print render($content['links']); ?>
+  </div>
 
   <?php if ($comments): ?>
     <section class="comments" id="comments">

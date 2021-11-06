@@ -1,0 +1,12 @@
+.block-hero {
+  background-color: transparent;
+  padding: 20px 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 48em) {
+  .block-hero {
+    padding: 70px 100px;
+  }
+}

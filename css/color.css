@@ -1,0 +1,232 @@
+:root {
+	--bg-color: #ffffff;
+	--base-color: #797979;
+	--accent-color: #262626;
+	--menu-bg-color: #faf8f8;
+	--alert-color: #ffab00;
+	--accent-transparent: #0000000a;
+  --hero-color: #fff5e5;
+}
+
+/* Color Module: Don't touch */
+
+body {
+	background-color: var(--bg-color);
+	color: var(--base-color);
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+	color: var(--base-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a:link,
+h1 a:hover,
+h1 a:visited,
+h1 a:active,
+h2 a:link,
+h2 a:hover,
+h2 a:visited,
+h2 a:active,
+h3 a:link,
+h3 a:hover,
+h3 a:visited,
+h3 a:active,
+h4 a:link,
+h4 a:hover,
+h4 a:visited,
+h4 a:active,
+h5 a:link,
+h5 a:hover,
+h5 a:visited,
+h5 a:active,
+h6 a:link,
+h6 a:hover,
+h6 a:visited,
+h6 a:active {
+	color: var(--accent-color);
+}
+
+
+.header-menu,
+.header-menu.ax-sticky-enabled {
+	background-color: var(--bg-color);
+}
+
+.header-banner {
+	background-color: transparent;
+}
+
+.ax-logo-svg {
+  fill: var(--accent-color);
+}
+
+ul.menu a.active {
+	color: var(--accent-color);
+}
+
+
+hr {
+	border-color: var(--base-color);
+}
+
+blockquote {
+  border-left-color: var(--base-color);
+}
+
+th {
+	color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+tr:hover {
+	color: var(--accent-color);
+}
+
+tr.odd,
+th.active,
+td.active {
+	background-color: var(--accent-transparent);
+}
+
+input,
+input:checked,
+select {
+	color: var(--base-color);
+	border-color: var(--base-color);
+}
+
+input:disabled {
+	opacity: 0.3;
+}
+
+option,
+textarea {
+	color: var(--base-color);
+}
+
+label:not(.option),
+.dropbutton-arrow,
+.machine-name-value {
+	color: var(--accent-color);
+}
+
+input.form-submit,
+button.form-submit {
+	color: var(--base-color);
+}
+
+input.form-submit.button-primary,
+button.form-submit.button-primary {
+	color: var(--bg-color);
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+
+input.form-submit.button-danger,
+button.form-submit.button-danger {
+	background-color: var(--alert-color);
+  border-color: var(--alert-color);
+}
+
+fieldset {
+	border-color: var(--base-color);
+	background-color: var(--bg-color);
+}
+
+.vertical-tabs {
+	border-color: var(--base-color);
+}
+
+.vertical-tab-item,
+.vertical-tabs:before {
+	border-color: var(--accent-transparent);
+	background-color: var(--accent-transparent);
+}
+
+.vertical-tab-link,
+.vertical-tab-link:focus,
+.vertical-tab-link:hover,
+.vertical-tab-link:active {
+	background-color: var(--bg-color);
+}
+
+.vertical-tab-link,
+.vertical-tab-link strong,
+.vertical-tab-link .fieldset-legend {
+	color: var(--base-color);
+}
+
+.vertical-tabs-pane.vertical-tab-selected > .vertical-tab-link {
+	background-color: var(--bg-color);
+	border-bottom-color: var(--accent-transparent);
+}
+
+.vertical-tab-selected strong,
+.vertical-tab-selected .fieldset-legend {
+	color: var(--accent-color);
+}
+
+.progress .bar {
+	border-color: var(--base-color);
+}
+
+.progress .filled {
+  background-color: var(--accent-color);
+}
+
+.js .dropbutton-widget,
+.ui-widget.ui-widget-content {
+  border-color: var(--base-color);
+}
+
+.js .dropbutton-widget {
+  background-color: var(--menu-bg-color);
+}
+
+.ui-dialog {
+	color: var(--base-color);
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  background-color: var(--accent-transparent);
+  border-color: var(--base-color);
+}
+
+.marker {
+  color: var(--bg-color);
+  background-color: var(--alert-color);
+}
+
+.form-required {
+	color: var(--alert-color);
+}
+
+.block-hero,
+.block-hero h2 {
+	color: var(--hero-color);
+}
+
+/*
+ * Color rules adjusted for desktop version.
+ */
+@media (min-width: 48em) {
+	
+	a:hover,
+  a:active	{
+		color: var(--accent-color);
+	}
+
+	.header-menu {
+		background-color: transparent;
+	}
+}
+

@@ -1,0 +1,75 @@
+ul.menu-tree {
+  border: none;
+  list-style: none;
+  text-align: left;
+	text-transform: none;
+	margin-bottom: 0.5rem;
+}
+
+ul.menu-tree.menu-toggles-processed {
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	background: var(--menu-bg-color);
+}
+
+[dir="rtl"] .menu-tree {
+  text-align: right;
+}
+
+.menu-tree li {
+  margin: 0 0 0 0.5rem;
+}
+
+[dir="rtl"] .menu-tree li {
+  margin: 0 0.5em 0 0;
+}
+
+.menu-tree li.expanded:before {
+	content: '\25BE';
+}
+
+.menu-tree li.expanded {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.menu-tree li.collapsed:before {
+	content: '\25B8';
+}
+
+.menu-tree li.collapsed {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+[dir="rtl"] ul li.collapsed {
+  list-style-image: url(/core/misc/menu-collapsed-rtl.png);
+}
+
+.menu-tree li.leaf:before {
+  content: '\25B9';
+}
+
+.menu-tree li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.menu-tree li.expanded,.menu-tree li.collapsed,.menu-tree li.leaf {
+  padding: 0 0 0.2em 0;
+  margin: 0;
+}
+
+[dir="rtl"] .menu-tree li.expanded,[dir="rtl"] .menu-tree li.collapsed,[dir="rtl"] .menu-tree li.leaf {
+  padding: 0.2em 0 0 0.5em;
+}
+
+.menu-tree li a.active {
+  color: (--accent-color);
+}
+
+@media (min-width: 48em) {
+	ul.menu-tree.menu-toggles-processed {
+		padding: 0;
+		background: transparent;
+	}
+}

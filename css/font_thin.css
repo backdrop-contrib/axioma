@@ -1,0 +1,113 @@
+/**
+ * @file
+ * Custom CSS for the Axioma theme.
+ * Contains only font related parameters for easier font customisation.
+ * (font-family, font-size, font-weight, line-height)
+ */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+h1 {
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+h3 {
+	font-size: 1.15rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: .75rem;
+}
+
+h6 {
+	font-size: .5rem;
+}
+
+ul.menu a {
+	line-height: 1rem;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+pre {
+	font-style: normal;
+}
+
+.machine-name-value {
+	font-family: monospace;
+}
+
+.ui-widget {
+	font-family: inherit;
+}
+
+th,
+em,
+label,
+caption,
+textarea,
+ul.menu:not(.menu-tree) a {
+	font-weight: 400;
+}
+
+b,
+strong,
+.username,
+.pager-current,
+.vertical-tab-link,
+.ui-dialog .ui-dialog-titlebar {
+	font-weight: 500;
+}
+
+tr,
+th,
+label,
+.pager,
+.marker,
+.breadcrumb,
+.ui-widget,
+.more-link,
+.site-slogan,
+.more-help-link,
+.node-readmore,
+.permalink,
+input.form-submit,
+button.form-submit,
+.vertical-tab-link,
+.tabledrag-toggle-weight,
+.block-system-powered-by,
+.ui-dialog .ui-dialog-titlebar,
+.js fieldset.collapsible .fieldset-legend a:before {
+	font-size: 0.8rem;
+}
+
+p.submitted,
+p.search-info,
+.password-toggle {
+	font-size: 0.6rem;
+}

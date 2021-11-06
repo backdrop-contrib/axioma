@@ -1,0 +1,6 @@
+.block-hero-no-image {
+  background-size: cover auto;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: url("../../img/hero.jpg");
+}

@@ -1,0 +1,46 @@
+ul.menu-top-only {
+	width: 100%;
+}
+
+.menu-top-only.menu-toggles-processed {
+	text-align: center;
+	padding: 0.25rem;
+	margin: 0.25rem 0;
+	background: var(--menu-bg-color);
+}
+
+.menu-top-only li {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+}
+
+.menu-top-only.menu-toggles-processed li {
+  display: block;
+}
+
+@media (min-width: 48em) {
+	
+  /* Settings specific for desktop layout */
+	
+	.menu-top-only,
+  .menu-top-only.menu-toggles-processed	{
+		display: inline-block;
+		text-align: inherit;
+		padding: 0.5rem 0;
+		margin: 0;
+		background: transparent;
+	}
+	
+	.menu-top-only li,
+	.menu-top-only.menu-toggles-processed li {
+		display: inline-block;
+	}
+	
+	ul.menu-top-only > li:first-child {
+		padding-left: 0;
+	}
+	
+	ul.menu-top-only > li:last-child {
+		padding-right: 0;
+	}
+}
