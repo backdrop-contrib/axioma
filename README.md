@@ -3,7 +3,8 @@ Axioma theme
 
 Minimalistic elegant theme with Color module support. Designed to be a frame for
 intricate visual content, to showcase artist's or photographer's work. Despite
-austere color palette the theme offers enough color customisation capabilities.
+austere color palette the theme offers decent color customisation capabilities.
+
 
 Features:
 - Customisable and mobile friendly header menu.
@@ -12,7 +13,7 @@ Features:
 - Ability to set menu block alignment for better site layout control.
 - Color module support.
 
-Axioma was largely inspired by the minimalistic themes from Koken CMS ✝ for
+Axioma was largely inspired by the minimalistic themes from Koken CMS for
 photographers.
 
 Installation
