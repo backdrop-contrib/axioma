@@ -1,7 +1,7 @@
 type = theme
 name = Axioma
 version = 1.0.0
-description = Minimalistic elegant theme with Color module support.
+description = Minimalistic elegant theme for Backdrop CMS with Color module support.
 backdrop = 1.x
 
 settings[dummy] = false
