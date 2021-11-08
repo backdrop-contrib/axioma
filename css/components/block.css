@@ -1,15 +1,15 @@
 .ax-align-left {
-	text-align: start;
+  text-align: start;
 }
 
 .ax-align-center {
-	text-align: center;
+  text-align: center;
 }
 
 .ax-align-right {
-	text-align: end;
+  text-align: end;
 }
 
 div.ax-align-right li.node-readmore {
-	padding-right: 0;
+  padding-right: 0;
 }

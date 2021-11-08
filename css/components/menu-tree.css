@@ -2,13 +2,13 @@ ul.menu-tree {
   border: none;
   list-style: none;
   text-align: left;
-	text-transform: none;
-	margin-bottom: 0.5rem;
+  text-transform: none;
+  margin-bottom: 0.5rem;
 }
 
 ul.menu-tree.menu-toggles-processed {
-	padding: 0.5rem 0.5rem 0 0.5rem;
-	background: var(--menu-bg-color);
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background: var(--menu-bg-color);
 }
 
 [dir="rtl"] .menu-tree {
@@ -24,7 +24,7 @@ ul.menu-tree.menu-toggles-processed {
 }
 
 .menu-tree li.expanded:before {
-	content: '\25BE';
+  content: '\25BE';
 }
 
 .menu-tree li.expanded {
@@ -33,7 +33,7 @@ ul.menu-tree.menu-toggles-processed {
 }
 
 .menu-tree li.collapsed:before {
-	content: '\25B8';
+  content: '\25B8';
 }
 
 .menu-tree li.collapsed {
@@ -68,8 +68,8 @@ ul.menu-tree.menu-toggles-processed {
 }
 
 @media (min-width: 48em) {
-	ul.menu-tree.menu-toggles-processed {
-		padding: 0;
-		background: transparent;
-	}
+  ul.menu-tree.menu-toggles-processed {
+    padding: 0;
+    background: transparent;
+  }
 }
