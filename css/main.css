@@ -162,7 +162,8 @@ input.form-checkbox {
 
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+.password-toggle-wrapper {
   width: 100%;
 }
 
