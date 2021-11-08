@@ -40,6 +40,41 @@ ul.menu:not(.menu-tree) a {
 	text-transform: uppercase;
 }
 
+ul.primary {
+  line-height: inherit;
+}
+
+ul.primary li a {
+  padding: 0.75rem 1.25rem;
+}
+
+ul.primary li.active a {
+  border: 1px solid;
+}
+
+nav.tabs {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  ul.primary {
+    margin: 0 0 -1px 0;
+  }
+
+  ul.primary li {
+    float: left;
+    margin: 0;
+  }
+  
+  ul.primary li.active a {
+    border-bottom: none;
+  }
+  
+  nav.tabs {
+    border-bottom: 1px solid;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -113,6 +148,7 @@ input,
 select,
 textarea,
 fieldset {
+  max-width: 100%;
 	padding: 0.5rem;
 	border: 1px solid;
 	border-radius: 0;
@@ -122,6 +158,12 @@ fieldset {
 input.form-radio,
 input.form-checkbox {
   vertical-align: baseline;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  width: 100%;
 }
 
 .form-item .description {
