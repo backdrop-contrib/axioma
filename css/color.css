@@ -216,6 +216,11 @@ fieldset {
   border-color: var(--base-color);
 }
 
+.resizable-textarea .grippie {
+  background-color: var(--bg-color);
+  border-color: var(--base-color);
+}
+
 .marker {
   color: var(--bg-color);
   background-color: var(--alert-color);
