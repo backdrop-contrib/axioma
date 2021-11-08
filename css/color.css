@@ -1,25 +1,25 @@
 :root {
-	--bg-color: #ffffff;
-	--base-color: #797979;
-	--accent-color: #262626;
-	--menu-bg-color: #faf8f8;
-	--alert-color: #ffab00;
-	--accent-transparent: #0000000a;
+  --bg-color: #ffffff;
+  --base-color: #797979;
+  --accent-color: #262626;
+  --menu-bg-color: #faf8f8;
+  --alert-color: #ffab00;
+  --accent-transparent: #0000000a;
   --hero-color: #fff5e5;
 }
 
 /* Color Module: Don't touch */
 
 body {
-	background-color: var(--bg-color);
-	color: var(--base-color);
+  background-color: var(--bg-color);
+  color: var(--base-color);
 }
 
 a:link,
 a:hover,
 a:visited,
 a:active {
-	color: var(--base-color);
+  color: var(--base-color);
 }
 
 h1,
@@ -52,17 +52,17 @@ h6 a:link,
 h6 a:hover,
 h6 a:visited,
 h6 a:active {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 
 .header-menu,
 .header-menu.ax-sticky-enabled {
-	background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .header-banner {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .ax-logo-svg {
@@ -70,12 +70,27 @@ h6 a:active {
 }
 
 ul.menu a.active {
-	color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+nav.tabs,
+ul.primary li a,
+ul.primary li a:hover,
+ul.primary li a:active,
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:active {
+  background-color: var(--bg-color);
+  border-color: var(--base-color);
+}
+
+ul.primary li.active a {
+  color: var(--accent-color);
 }
 
 
 hr {
-	border-color: var(--base-color);
+  border-color: var(--base-color);
 }
 
 blockquote {
@@ -83,100 +98,100 @@ blockquote {
 }
 
 th {
-	color: var(--accent-color);
+  color: var(--accent-color);
   border-bottom-color: var(--accent-color);
 }
 
 tr:hover {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 tr.odd,
 th.active,
 td.active {
-	background-color: var(--accent-transparent);
+  background-color: var(--accent-transparent);
 }
 
 input,
 input:checked,
 select {
-	color: var(--base-color);
-	border-color: var(--base-color);
+  color: var(--base-color);
+  border-color: var(--base-color);
 }
 
 input:disabled {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 option,
 textarea {
-	color: var(--base-color);
+  color: var(--base-color);
 }
 
 label:not(.option),
 .dropbutton-arrow,
 .machine-name-value {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 input.form-submit,
 button.form-submit {
-	color: var(--base-color);
+  color: var(--base-color);
 }
 
 input.form-submit.button-primary,
 button.form-submit.button-primary {
-	color: var(--bg-color);
-	background-color: var(--accent-color);
-	border-color: var(--accent-color);
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 input.form-submit.button-danger,
 button.form-submit.button-danger {
-	background-color: var(--alert-color);
+  background-color: var(--alert-color);
   border-color: var(--alert-color);
 }
 
 fieldset {
-	border-color: var(--base-color);
-	background-color: var(--bg-color);
+  border-color: var(--base-color);
+  background-color: var(--bg-color);
 }
 
 .vertical-tabs {
-	border-color: var(--base-color);
+  border-color: var(--base-color);
 }
 
 .vertical-tab-item,
 .vertical-tabs:before {
-	border-color: var(--accent-transparent);
-	background-color: var(--accent-transparent);
+  border-color: var(--accent-transparent);
+  background-color: var(--accent-transparent);
 }
 
 .vertical-tab-link,
 .vertical-tab-link:focus,
 .vertical-tab-link:hover,
 .vertical-tab-link:active {
-	background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .vertical-tab-link,
 .vertical-tab-link strong,
 .vertical-tab-link .fieldset-legend {
-	color: var(--base-color);
+  color: var(--base-color);
 }
 
 .vertical-tabs-pane.vertical-tab-selected > .vertical-tab-link {
-	background-color: var(--bg-color);
-	border-bottom-color: var(--accent-transparent);
+  background-color: var(--bg-color);
+  border-bottom-color: var(--accent-transparent);
 }
 
 .vertical-tab-selected strong,
 .vertical-tab-selected .fieldset-legend {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .progress .bar {
-	border-color: var(--base-color);
+  border-color: var(--base-color);
 }
 
 .progress .filled {
@@ -193,11 +208,16 @@ fieldset {
 }
 
 .ui-dialog {
-	color: var(--base-color);
+  color: var(--base-color);
 }
 
 .ui-dialog .ui-dialog-titlebar {
   background-color: var(--accent-transparent);
+  border-color: var(--base-color);
+}
+
+.resizable-textarea .grippie {
+  background-color: var(--bg-color);
   border-color: var(--base-color);
 }
 
@@ -207,26 +227,26 @@ fieldset {
 }
 
 .form-required {
-	color: var(--alert-color);
+  color: var(--alert-color);
 }
 
 .block-hero,
 .block-hero h2 {
-	color: var(--hero-color);
+  color: var(--hero-color);
 }
 
 /*
  * Color rules adjusted for desktop version.
  */
 @media (min-width: 48em) {
-	
-	a:hover,
-  a:active	{
-		color: var(--accent-color);
-	}
+  
+  a:hover,
+  a:active  {
+    color: var(--accent-color);
+  }
 
-	.header-menu {
-		background-color: transparent;
-	}
+  .header-menu {
+    background-color: transparent;
+  }
 }
 

@@ -20,24 +20,59 @@ h4 a,
 h5 a,
 h6 a,
 .site-slogan {
-	text-transform: uppercase;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
 .menu {
-	display: inline-block;
-	padding: 0;
-	margin: 0 auto;
-	list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
 }
 
 ul.menu a,
 .username {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul.menu:not(.menu-tree) a {
-	text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+ul.primary {
+  line-height: inherit;
+}
+
+ul.primary li a {
+  padding: 0.75rem 1.25rem;
+}
+
+ul.primary li.active a {
+  border: 1px solid;
+}
+
+nav.tabs {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  ul.primary {
+    margin: 0 0 -1px 0;
+  }
+
+  ul.primary li {
+    float: left;
+    margin: 0;
+  }
+  
+  ul.primary li.active a {
+    border-bottom: none;
+  }
+  
+  nav.tabs {
+    border-bottom: 1px solid;
+  }
 }
 
 img {
@@ -52,12 +87,12 @@ video {
 
 p.submitted,
 p.search-info {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 hr {
-	border: 0;
-	border-bottom: 1px solid;
+  border: 0;
+  border-bottom: 1px solid;
 }
 
 figure {
@@ -66,7 +101,7 @@ figure {
 
 pre,
 blockquote {
-	border-left: 0.15rem solid;
+  border-left: 0.15rem solid;
   margin: 0;
   padding-left: 1.25rem;
 }
@@ -82,8 +117,8 @@ th,
 tr, 
 td,
 caption {
-	padding: 0.5rem;
-	overflow: hidden;
+  padding: 0.5rem;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -95,33 +130,41 @@ th {
 th,
 label,
 caption {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 tr.even,
 tr.odd {
   background-color: transparent;
   border: 0;
-	padding: 0;
+  padding: 0;
 }
 
 th.active > a > img {
-	margin-left: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 input,
 select,
 textarea,
 fieldset {
-	padding: 0.5rem;
-	border: 1px solid;
-	border-radius: 0;
-	background-color: transparent;
+  max-width: 100%;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 0;
+  background-color: transparent;
 }
 
 input.form-radio,
 input.form-checkbox {
   vertical-align: baseline;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+.password-toggle-wrapper {
+  width: 100%;
 }
 
 .form-item .description {
@@ -135,11 +178,11 @@ input.form-checkbox {
 
 input.form-submit,
 button.form-submit {
-	cursor: pointer;
+  cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-	padding: 0.75rem 1.25rem;
-	margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
   margin-right: 1rem;
   letter-spacing: 0.025em;
 }
@@ -153,8 +196,8 @@ fieldset {
 }
 
 fieldset .fieldset-legend {
-	display: block;
-	position: absolute;
+  display: block;
+  position: absolute;
   width: 100%;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
@@ -176,8 +219,8 @@ fieldset .fieldset-legend {
 }
 
 fieldset.collapsible .fieldset-legend {
-	display: block;
-	padding: 0.5rem 0.75rem;
+  display: block;
+  padding: 0.5rem 0.75rem;
 }
 
 .js fieldset.collapsible .fieldset-legend a:before {
@@ -196,11 +239,11 @@ fieldset .fieldset-wrapper {
 }
 
 .form-item-text-format-format {
-	margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .filter-guidelines-item {
-	margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 legend {
@@ -213,7 +256,7 @@ legend {
 .vertical-tabs {
   position: relative;
   margin: 1em 0;
-	border: 1px solid;
+  border: 1px solid;
 }
 
 .vertical-tabs-list {
@@ -252,7 +295,7 @@ legend {
 }
 
 .vertical-tabs-pane.vertical-tab-selected > .vertical-tab-link {
-	background: transparent;
+  background: transparent;
   border-bottom: 1px solid;
 }
 
@@ -274,8 +317,8 @@ legend {
 .vertical-tab-link:focus .fieldset-legend,
 .vertical-tab-link:active .fieldset-legend,
 .vertical-tab-link:hover .fieldset-legend {
-	text-decoration: none;
-	text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .vertical-tab-link strong,
@@ -290,14 +333,14 @@ legend {
   box-sizing: border-box;
   padding-left: 1em;
   padding-right: 1em;
-	background: transparent;
+  background: transparent;
 }
 /* Vertcal tabs end */
 
 .progress .bar {
   background-color: transparent;
   border: 1px solid;
-	height: 32px;
+  height: 32px;
 }
 
 .progress .filled {
@@ -305,7 +348,7 @@ legend {
 }
 
 .js .dropbutton-widget {
-	background: transparent;
+  background: transparent;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -315,7 +358,7 @@ legend {
 .ui-corner-bottom,
 .ui-corner-right,
 .ui-corner-br {
-	-webkit-border-radius: 0;
+  -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
@@ -324,7 +367,7 @@ legend {
   border-style: solid;
   border-radius: 0;
   border-width: 0 0 1px 0;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .marker {
@@ -334,9 +377,9 @@ legend {
 }
 
 .block-system-powered-by {
-	text-align: center;
-	padding-top: 1.5rem;
-	margin: 2rem auto;
+  text-align: center;
+  padding-top: 1.5rem;
+  margin: 2rem auto;
   border-top: 1px solid;
 }
 
@@ -349,35 +392,35 @@ legend {
 .password-toggle,
 .tabledrag-toggle-weight,
 .block-system-powered-by {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 @media (min-width: 48em) {
-	
-	.vertical-tabs-pane {
-		position: static;
-		height: auto;
-		padding: 1rem 0.5rem 0 0.5rem;
-		background: transparent;
-		border-bottom: 0;
-	}
+  
+  .vertical-tabs-pane {
+    position: static;
+    height: auto;
+    padding: 1rem 0.5rem 0 0.5rem;
+    background: transparent;
+    border-bottom: 0;
+  }
 
-	.vertical-tabs-list {
-		display: block;
-	}
-	
-	.vertical-tab-item.vertical-tab-selected {
-		border-right-width: 0;
-		background: transparent;
-	}
-	
-	.vertical-tabs:before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: -10;
-		width: 15em;
-		height: 100%;
-	}
+  .vertical-tabs-list {
+    display: block;
+  }
+  
+  .vertical-tab-item.vertical-tab-selected {
+    border-right-width: 0;
+    background: transparent;
+  }
+  
+  .vertical-tabs:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 15em;
+    height: 100%;
+  }
 }
