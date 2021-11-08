@@ -73,6 +73,21 @@ ul.menu a.active {
 	color: var(--accent-color);
 }
 
+nav.tabs,
+ul.primary li a,
+ul.primary li a:hover,
+ul.primary li a:active,
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:active {
+  background-color: var(--bg-color);
+  border-color: var(--base-color);
+}
+
+ul.primary li.active a {
+  color: var(--accent-color);
+}
+
 
 hr {
 	border-color: var(--base-color);
