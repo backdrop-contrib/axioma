@@ -1,6 +1,6 @@
 type = theme
 name = Axioma
-version = 1.0.1
+version = 1.0.2
 description = Minimalistic elegant theme for Backdrop CMS with Color module support.
 backdrop = 1.x
 
