@@ -25,10 +25,13 @@ function axioma_preprocess_header(&$variables) {
       if ($header_has_logo && $is_theme_logo) {
         $variables['ax_logo'] = file_get_contents($theme_path . '/img/ax_logo.svg');
       }
+      else {
+        $variables['ax_logo'] = FALSE;
+      }
       // Get name of the menu being used in the header block.
       $menu_name = $block->settings['block_settings']['menu'];
       if (empty($menu_name)) {
-        unset($variables['menu']);
+        $variables['menu'] = FALSE;
       }
       else {
         // Build menu render array.
@@ -95,7 +98,7 @@ function axioma_preprocess_page(&$variables) {
     $path = $path_module . '/css/font.css';
   }
   backdrop_add_css($path, $options);
-  
+
   if (empty(theme_get_setting('hero_art', 'axioma'))) {
     backdrop_add_css($path_module . '/css/components/hero_art.css', $options);
   }
