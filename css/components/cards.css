@@ -32,6 +32,6 @@
 @media (min-width: 48em) {
   .block-views-promoted-cards-block .views-view-grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
   }
 }
