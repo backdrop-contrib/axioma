@@ -235,6 +235,10 @@ fieldset {
   color: var(--hero-color);
 }
 
+.view-promoted-cards .views-grid-box {
+  background-color: var(--bg-color);
+}
+
 /*
  * Color rules adjusted for desktop version.
  */
