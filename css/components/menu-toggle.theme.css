@@ -9,17 +9,12 @@
 .menu-toggle-button {
   position: relative;
   display: inline-block;
+  width: 26px;
   text-indent: 28px;
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-@media (min-width: 25em) { /* 400px @ 16px font size */
-  .menu-toggle-button {
-    width: auto;
-  }
 }
 
 @media (min-width: 48em) {  /* 768px @ 16px font size */

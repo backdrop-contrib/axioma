@@ -12,6 +12,7 @@ stylesheets[all][] = css/color.css
 stylesheets[all][] = css/components/block.css
 stylesheets[all][] = css/components/hero.css
 stylesheets[all][] = css/components/header.css
+stylesheets[all][] = css/components/cards.css
 stylesheets[all][] = css/components/menu-dropdown.theme.css
 stylesheets[all][] = css/components/menu-toggle.theme.css
 stylesheets[all][] = css/components/menu-top-only.css
