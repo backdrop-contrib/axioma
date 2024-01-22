@@ -51,17 +51,6 @@ function axioma_preprocess_header(&$variables) {
 }
 
 /**
- * Implements hook_menu_toggle().
- * Removes 'Menu' text near 'hamburger' button.
- */
-function axioma_menu_toggle(&$variables) {
-  if (isset($variables['text'])) {
-    $variables['text'] = '';
-  }
-  return theme_menu_toggle($variables);
-}
-
-/**
  * Implements hook_preprocess_block().
  * Sets alignment for system provided menu blocks.
  */
