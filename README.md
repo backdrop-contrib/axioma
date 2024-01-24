@@ -35,7 +35,7 @@ Credits
 
 - Written for Backdrop by [Pavel](https://github.com/korontari).
 - Montserrat font(Open Font License) designed by [Julieta Ulanovsky](https://github.com/JulietaUla/Montserrat).
-- Original artwork used in hero block by [Pavel Goloviy](https://p.goloviy.com).
+- Original artwork used in hero block by [Pavel Golovii](https://illustrator.golovii.art).
 
 License
 -------
