@@ -21,6 +21,7 @@ function get_header_menu_config($menu_name = 'main-menu') {
     'style' => 'top-only',
     'expand_all' => FALSE,
     'clickdown' => 0,
+    'toggle_text' => 'Menu',
     'depth' => 0,
     'toggle' => 1,
   );
